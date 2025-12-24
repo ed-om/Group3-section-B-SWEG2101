@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Pricing Cards - 5 Plans</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Find Your Perfect Plan</h1>
+            <p class="subtitle">With 5 distinct options, there's a perfect plan for everyone. Start with a free trial and upgrade anytime.</p>
+            
+            <div class="toggle-container">
+                <span class="toggle-label">Monthly</span>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="billing-toggle">
+                    <span class="slider"></span>
+                </label>
+                <span class="toggle-label">Annual</span>
+                <span class="savings-badge">Save 20%</span>
+            </div>
+        </header>
+
+        <div class="pricing-cards">
+            <!-- Free Plan -->
+            <div class="pricing-card">
+                <h2 class="plan-name">Free</h2>
+                <p class="plan-description">Perfect for trying out our platform with basic features.</p>
+                
+                <div class="price">
+                    <span class="price-amount" id="free-price">$0</span>
+                    <span class="price-period" id="free-period">/month</span>
+                    <p class="price-note" id="free-note">Forever free</p>
+                </div>
+                
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> 1 project</li>
+                    <li><i class="fas fa-check"></i> 1GB storage</li>
+                    <li><i class="fas fa-check"></i> Basic templates</li>
+                    <li><i class="fas fa-check"></i> Community support</li>
+                    <li class="disabled"><i class="fas fa-times"></i> Analytics</li>
+                    <li class="disabled"><i class="fas fa-times"></i> Custom domains</li>
+                    <li class="disabled"><i class="fas fa-times"></i> Priority support</li>
+                </ul>
+                
+                <button class="btn btn-outline">Get Started</button>
+            </div>
+
+            <!-- Starter Plan -->
+            <div class="pricing-card">
+                <h2 class="plan-name">Starter</h2>
+                <p class="plan-description">Great for individuals and small projects.</p>
+                
+                <div class="price">
+                    <span class="price-amount" id="starter-price">$12</span>
+                    <span class="price-period" id="starter-period">/month</span>
+                    <p class="price-note" id="starter-note">Billed monthly</p>
+                </div>
+                
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> 5 projects</li>
+                    <li><i class="fas fa-check"></i> 10GB storage</li>
+                    <li><i class="fas fa-check"></i> All templates</li>
+                    <li><i class="fas fa-check"></i> Email support</li>
+                    <li><i class="fas fa-check"></i> Basic analytics</li>
+                    <li class="disabled"><i class="fas fa-times"></i> Custom domains</li>
+                    <li class="disabled"><i class="fas fa-times"></i> Priority support</li>
+                </ul>
+                
+                <button class="btn btn-outline">Start Free Trial</button>
+            </div>
+
+            <!-- Professional Plan -->
+            <div class="pricing-card popular">
+                <div class="popular-tag">MOST POPULAR</div>
+                <h2 class="plan-name">Professional</h2>
+                <p class="plan-description">Ideal for freelancers and growing businesses.</p>
+                
+                <div class="price">
+                    <span class="price-amount" id="pro-price">$29</span>
+                    <span class="price-period" id="pro-period">/month</span>
+                    <p class="price-note" id="pro-note">Billed monthly</p>
+                </div>
+                
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> 20 projects</li>
+                    <li><i class="fas fa-check"></i> 50GB storage</li>
+                    <li><i class="fas fa-check"></i> Advanced templates</li>
+                    <li><i class="fas fa-check"></i> Priority email support</li>
+                    <li><i class="fas fa-check"></i> Advanced analytics</li>
+                    <li><i class="fas fa-check"></i> Custom domains</li>
+                    <li><i class="fas fa-star"></i> API access</li>
+                </ul>
+                
+                <button class="btn btn-primary">Start Free Trial</button>
+            </div>
+
+            <!-- Business Plan -->
+            <div class="pricing-card">
+                <h2 class="plan-name">Business</h2>
+                <p class="plan-description">For established businesses with higher demands.</p>
+                
+                <div class="price">
+                    <span class="price-amount" id="business-price">$59</span>
+                    <span class="price-period" id="business-period">/month</span>
+                    <p class="price-note" id="business-note">Billed monthly</p>
+                </div>
+                
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> 50 projects</li>
+                    <li><i class="fas fa-check"></i> 200GB storage</li>
+                    <li><i class="fas fa-check"></i> Custom templates</li>
+                    <li><i class="fas fa-check"></i> Phone & email support</li>
+                    <li><i class="fas fa-check"></i> Advanced analytics</li>
+                    <li><i class="fas fa-check"></i> Multiple domains</li>
+                    <li><i class="fas fa-star"></i> White-label options</li>
+                </ul>
+                
+                <button class="btn btn-outline">Start Free Trial</button>
+            </div>
+
+            <!-- Enterprise Plan -->
+            <div class="pricing-card enterprise">
+                <div class="enterprise-tag">ENTERPRISE</div>
+                <h2 class="plan-name">Enterprise</h2>
+                <p class="plan-description">For large organizations with custom requirements.</p>
+                
+                <div class="price">
+                    <span class="price-amount" id="enterprise-price">$99</span>
+                    <span class="price-period" id="enterprise-period">/month</span>
+                    <p class="price-note" id="enterprise-note">Billed monthly</p>
+                </div>
+                
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Unlimited projects</li>
+                    <li><i class="fas fa-check"></i> 1TB storage</li>
+                    <li><i class="fas fa-check"></i> Fully custom solutions</li>
+                    <li><i class="fas fa-check"></i> 24/7 dedicated support</li>
+                    <li><i class="fas fa-check"></i> Custom analytics</li>
+                    <li><i class="fas fa-check"></i> Unlimited domains</li>
+                    <li><i class="fas fa-star"></i> Dedicated account manager</li>
+                </ul>
+                
+                <button class="btn btn-secondary">Contact Sales</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
