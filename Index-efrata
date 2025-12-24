@@ -1,0 +1,19 @@
+# main.py
+def new_feature():
+    """This is a new feature added in my branch"""
+    return "Feature from new branch working!"
+
+def calculate_sum(a, b):
+    """Add two numbers"""
+    return a + b
+
+def main():
+    # Test the new feature
+    print(new_feature())
+    
+    # Example calculation
+    result = calculate_sum(5, 3)
+    print(f"5 + 3 = {result}")
+
+if __name__ == "__main__":
+    main()
